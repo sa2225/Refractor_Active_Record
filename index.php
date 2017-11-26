@@ -45,10 +45,14 @@ $obj=new main();
 
 
 
+
 class dbConn{
 
+    //variable to hold connection object.
     protected static $db;
 
+
+    //private construct - class cannot be instantiated externally.
     private function __construct() {
 
         try {
@@ -313,9 +317,9 @@ abstract class model {
 
 
 
-// Accounts table model
+// Accounts table model as final
 
-class account extends model {
+final class account extends model {
 
     public $id;
 
@@ -345,9 +349,9 @@ class account extends model {
 
 
 
-// Todos table model
+// Todos table model as final 
 
-class todo extends model {
+final class todo extends model {
 
     public $id;
 
