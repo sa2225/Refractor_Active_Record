@@ -1,8 +1,10 @@
 <?php
 
 
+//Namespace declaration
 
-//namespace Display;
+namespace TableDisplay;
+
 
 class displayHtml{
 
