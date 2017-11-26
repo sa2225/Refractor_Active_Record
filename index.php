@@ -1,9 +1,17 @@
 <?php
 
-//ini_set('display_errors', 'OFF');
+ini_set('display_errors', 'On');
 
-//error_reporting(E_ERROR );
+error_reporting(E_ERROR );
 
+
+//included Namespace for displayHtml class
+
+include "displayHtml.php";
+
+use TableDisplay\displayHtml as displayHtml;
+
+$obj = new displayHtml;
 
 
 define('DATABASE', 'sa2225');
@@ -30,8 +38,8 @@ class Manage {
 
 spl_autoload_register(array('Manage', 'autoload'));
 
+//$obj=new displayHtml;
 
-$obj=new displayHtml;
 
 $obj=new main();
 
