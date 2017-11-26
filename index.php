@@ -337,6 +337,8 @@ final class account extends model {
 
     public $password;
 
+    protected static $modelName = 'account';
+
     public static function getTablename(){
 
         $tableName='accounts';
@@ -366,6 +368,8 @@ final class todo extends model {
     public $message;
 
     public $isdone;
+
+    protected static $modelName = 'todo';
 
     public static function getTablename(){
 
